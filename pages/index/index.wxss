@@ -35,23 +35,22 @@
 
 .btn1{
   width: 200px;
+
   background-color: rgb(110, 218, 218);
   color: rgb(22, 22, 22);
    border-color: rgb(189, 197, 197);
 }
-<<<<<<< HEAD
-=======
+
 .btnGroup{
+    margin: 20px;
     display:flex;
     flex-direction:row;
     align-items: center;
 }
-.txt_R{
-  
-}
 
->>>>>>> 5e6a348d5ce04c5a827722d7054487aea8aecb3a
 .txt_D{
   margin-top: 300px;
+}
+.txt_D2{
 }
 
