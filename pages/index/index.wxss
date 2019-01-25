@@ -1,30 +1,24 @@
 /**index.wxss**/
 .container {
   height: 100%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
  
 }
 .user_computer {
-  margin-top: 50px;
-  width: 70%;
+  width: 80%;
   font-size:20px;
 }
 .input{
-   width: 100px;
-   height: 30px;
+   width: 150px;
+   height: 25px;
    border-radius: 5px;
    background-color:  rgb(223, 241, 241);
 
-}
-.install{
-   margin-top: 10px;
-   border-color: rgb(189, 197, 197);
-   border-bottom:5px;
 }
 
 .count{
@@ -42,15 +36,29 @@
 }
 
 .btnGroup{
-    margin: 20px;
+    margin-top: 20px;
     display:flex;
     flex-direction:row;
-    align-items: center;
+}
+.btnGroup1{
+margin-left: 20px;
+
+display:flex;
+flex-direction:column;
+align-items: center;
 }
 
-.txt_D{
-  margin-top: 300px;
+.btnGroup2{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:column;
+}
+.labelstyle{
+margin-top: 10px;
 }
 .txt_D2{
+   font-size:50px;
+   display:flex;
+ flex-direction:column;
+ align-items: center;
 }
-

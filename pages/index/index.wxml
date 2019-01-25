@@ -1,33 +1,33 @@
-﻿<!--index.wxml-->
+<!--index.wxml-->
 <view class="container">
- <view class='image'>
-  <image style="width: 120px; height: 120px; "
+ 
+  <image style="width: 110px; height: 120px; "
           src="logo.jpg"
         ></image>
- </view>
+
 
   <view class="user_computer">
 
   <view class="btnGroup">
-    <text class="txt_R">管道内径：</text>
-    <input class="input" bindinput="bindKeyInput"  placeholder="点击输入当前管道内径" maxlength='5' />
+    <text>管道内径：</text>
+    <input class="input" bindinput="bindKeyInput"  placeholder="点击输入" type="digit" maxlength='6' />
+    <text decode="{{true}}">&nbsp;mm</text>
   </view>
- <view class="btnGroup" >
-    <view>选择安装方法:</view>
-    <radio-group name="radio-group" bindchange="radioChange">
-      <label><radio value="radio1" color='#5cc'/> Z法 </label>
-      <label><radio value="radio2" color='#5cc'/> V法 </label>
-    </radio-group>
-  </view>
+<view class="btnGroup" >
+ <view>安装方法:</view>
+  <radio-group name="radio-group" bindchange="radioChange" class="btnGroup1">
+<label ><radio value="radio1" color='#5cc' /> Z法 </label>
+<label class="labelstyle"><radio value="radio2" color='#5cc' /> V法 </label>
+</radio-group>
+</view>
     
-  <button class='btn1'  bindtap="btn1">计算</button>
+  <view class="btnGroup"><button class='btn1' bindtap="btn1" >计算</button></view>
 
-
-  <view class="btnGroup">
+  <view class="btnGroup2">
     <text class="txt_D">{{txt_D}}</text>
     <text class="txt_D2">{{distance}}</text>
   </view>
   </view>
-
+  </view>
 
 
