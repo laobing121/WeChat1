@@ -35,11 +35,13 @@ Page({
     if(radioValue=="radio1")
     {
       //这样才能上界面
-      this.setData({ distance: inputValue / Math.sqrt(3)  });
+      this.setData({
+        distance: (inputValue / Math.sqrt(3)).toFixed(1)});
     }
     else if (radioValue == "radio2")
       {
-      this.setData({ distance: inputValue * 2 / Math.sqrt(3) });
+      this.setData({
+        distance: (inputValue * 2 / Math.sqrt(3)).toFixed(1)});
       }
   },
 
