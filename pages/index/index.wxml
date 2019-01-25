@@ -7,6 +7,7 @@
  </view>
 
   <view class="user_computer">
+<<<<<<< HEAD
 
    <view class='diameter' style="flex-direction:row">
      <text class="txt_R" >管道内径：</text>
@@ -26,6 +27,24 @@
       <text class="txt_D2">{{distance}}</text>
     </view>
   
+=======
+  <view class="btnGroup">
+    <text class="txt_R">管道内径：</text>
+    <input bindinput="bindKeyInput"  placeholder="点击输入当前管道内径"/>
+  </view>
+   
+ <view class="btnGroup">
+    <view>选择安装方法:</view>
+    <radio-group name="radio-group" bindchange="radioChange">
+      <label><radio value="radio1" color='#5cc'/> Z法 </label>
+      <label><radio value="radio2" color='#5cc'/> V法 </label>
+    </radio-group>
+  </view>
+    
+  <button class='btn1'  bindtap="btn1">计算</button>
+   <text class="txt_D">{{txt_D}}</text>
+   <text class="txt_D2">{{distance}}</text>
+>>>>>>> 5e6a348d5ce04c5a827722d7054487aea8aecb3a
   </view>
 
 
