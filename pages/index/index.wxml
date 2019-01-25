@@ -1,10 +1,13 @@
 <!--index.wxml-->
 <view class="container">
   <view class="user_computer">
-   <text class="txt_R">管道内径：</text>
+  <view class="btnGroup">
+    <text class="txt_R">管道内径：</text>
     <input bindinput="bindKeyInput"  placeholder="点击输入当前管道内径"/>
- <view class="section section_gap">
-    <view class="section__title">选择安装方法</view>
+  </view>
+   
+ <view class="btnGroup">
+    <view>选择安装方法:</view>
     <radio-group name="radio-group" bindchange="radioChange">
       <label><radio value="radio1" color='#5cc'/> Z法 </label>
       <label><radio value="radio2" color='#5cc'/> V法 </label>
