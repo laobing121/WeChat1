@@ -1,0 +1,38 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/**头像**/
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+/**名字**/
+.userinfo-nickname {
+ color:  rgb(114, 114, 114);
+}
+
+.user_computer {
+  margin-top: 100px;
+  color:  rgb(0, 0, 0);
+}
+
+.btn1{
+  width: 100%;
+  background-color: rgb(110, 218, 218);
+  color: rgb(22, 22, 22);
+}
+.txt_R{
+  
+}
+
+.txt_D{
+  
+}
+
