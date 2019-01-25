@@ -2,13 +2,14 @@
 //获取应用实例
 const app = getApp()
 var initData ="安装距离：";
-var distance = 0 ;
+var distance ;
 var inputValue='';
 var radioValue='' ;
 Page({
   data: {
     txt_D: initData,
     hasUserInfo: false,
+    distance,inputValue, radioValue,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
@@ -32,12 +33,14 @@ Page({
   //按钮处理函数——计算安装距离
   btn1(e){
     if(radioValue=="radio1")
-     {distance = inputValue / Math.sqrt(3);
-    console.log('radio发生change事件，携带value值为：', radioValue);
-      console.log('radio发生change事件，携带value值为：', inputValue);}
-      else
-      distance = this.data.inputValue / Math.sqrt(2);
-    //console.log('radio发生change事件，携带value值为：', radioValue)
+    {
+      //这样才能上界面
+      this.setData({ distance: inputValue / Math.sqrt(3)  });
+    }
+    else if (radioValue == "radio2")
+      {
+      this.setData({ distance: inputValue * 2 / Math.sqrt(3) });
+      }
   },
 
   onLoad: function () {

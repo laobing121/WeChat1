@@ -12,8 +12,8 @@
   </view>
     
   <button class='btn1'  bindtap="btn1">计算</button>
-   <text class="txt_D">{{txt_D }}</text>
-   <text class="txt_D">{{ distance}}</text>
+   <text class="txt_D">{{txt_D}}</text>
+   <text class="txt_D2">{{distance}}</text>
   </view>
 </view>
 
