@@ -24,20 +24,21 @@
 }
 
 .btn1{
-  width: 100%;
+  width: 150px;
   background-color: rgb(110, 218, 218);
   color: rgb(22, 22, 22);
 }
 .btnGroup{
+    margin: 20px;
     display:flex;
     flex-direction:row;
     align-items: center;
 }
-.txt_R{
+.txt_D{
+  
   
 }
-
-.txt_D{
+.txt_D2{
   
 }
 
