@@ -1,0 +1,57 @@
+<!--pages/function/function.wxml-->
+
+
+<view class="container" wx:if="{{isshow_3}}">
+<text class='txt'>计算安装距离</text>
+     <view class="user_computer">
+       <view class="btnGroup">
+        <text>管道内径：</text>
+         <input class="input" bindinput="bindInput_diam"  placeholder="点击输入" type="digit" maxlength='6' />
+         <text decode="{{true}}">&nbsp;mm</text>
+        </view>
+
+        <view class="btnGroup">
+          <view>安装方法:</view>
+            <radio-group name="radio-group" bindchange="radioChange" class="btnGroup1">
+             <label ><radio value="radio1" color='#5cc' /> Z法 </label>
+             <label class="labelstyle"><radio value="radio2" color='#5cc' /> V法 </label>
+            </radio-group>
+        </view>
+        <view class="btnGroup"><button class='btn1' bindtap="btn1" >计算</button></view>
+        <view class="btnGroup2">
+          <text class="txt_D">{{txt_D}}</text>
+          <text class="txt_D2">{{distance}}</text>
+        </view>
+      </view>
+ </view>
+
+
+
+ 
+  <view class="container" wx:if="{{isshow_4}}">
+   <text class='txt'>计算传播时间比</text>
+     <view class="user_computer">
+       <view class="btnGroup">
+        <text>管内水温：</text>
+         <input class="input" bindinput="bindInput_temp"  placeholder="点击输入" type="digit" maxlength='6' />
+         <text decode="{{true}}">&nbsp;°C</text>
+        </view>
+         <view class="btnGroup">
+        <text>传播时间：</text>
+         <input class="input" bindinput="bindInput_time"  placeholder="点击输入" type="digit" maxlength='6' />
+         <text decode="{{true}}">&nbsp;us</text>
+        </view>
+        <view class="btnGroup"><button class='btn1' bindtap="btn2" >计算</button></view>
+        <view class="btnGroup2">
+          <text class="txt_D">传播时间比：</text>
+          <text class="txt_D3">{{timeratio}}</text>
+        </view>
+      </view>
+       <text class="txt_tip">> 说明：在水温已知的情况下，换能器安装越精确，传播时间比越接近100%</text>
+ </view>
+
+<view class="btnGroup0">
+<button class='button_prew' bindtap="btn_prew"  wx:if="{{isshow_1}}" ><image class='image' style="width: 190rpx; height: 75rpx; "src="/images/prew.jpg"></image></button>
+<button class='button_next' bindtap="btn_next"  wx:if="{{isshow_2}}" ><image class='image'style="width: 190rpx; height: 75rpx;"src="/images/next.jpg"></image></button>
+</view>
+

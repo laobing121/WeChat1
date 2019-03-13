@@ -1,9 +1,10 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/function/function",
     "pages/logs/logs"
   ],
- 
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#5cc",
@@ -12,5 +13,24 @@
     "backgroundColor": "#eeeeee",
     "navigationBarTitleStyle": "black",
     "statusBarTextStyle": "black"
-  }
+  },
+    "tabBar": {
+      "color": "#a9b7b7",
+      "selectedColor": "#11cd6e",
+      "borderStyle": "white",
+      "list": [
+        {
+          "selectedIconPath": "images/home.png",
+          "iconPath": "images/home.png",
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "selectedIconPath": "images/function.png",
+          "iconPath": "images/function.png",
+          "pagePath": "pages/function/function",
+          "text": "功能"
+        }
+      ]
+    }
 }

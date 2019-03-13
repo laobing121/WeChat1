@@ -12,41 +12,14 @@ Page({
     distance,inputValue, radioValue,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-
+  
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+ // bindViewTap: function() {
+  //  wx.navigateTo({
+  //    url: '../logs/logs'
+  //  })
+  //},
 
-  //收集内径
-  bindKeyInput(e) {
-      inputValue = e.detail.value;
-  },
-
-  //安装方法radio
-  radioChange(e){
-     radioValue = e.detail.value;
-  },
-
-  //按钮处理函数——计算安装距离
-  btn1(e){
-    if(radioValue=="radio1")
-    {
-      //这样才能上界面
-      this.setData({
-        distance: (inputValue / Math.sqrt(3)).toFixed(1) + "mm",
-        });
-    }
-    else if (radioValue == "radio2")
-      {
-      this.setData({
-        distance: (inputValue * 2 / Math.sqrt(3)).toFixed(1) + "mm"
-        });
-     
-      }
-  },
 
   onLoad: function () {
     if (app.globalData.userInfo) {

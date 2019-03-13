@@ -1,7 +1,7 @@
 /**index.wxss**/
 .container {
   height: 100%;
-  margin-top: 20px;
+  margin-top: 240rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,54 +11,27 @@
 }
 .user_computer {
   width: 80%;
-  font-size:20px;
-}
-.input{
-   width: 150px;
-   height: 25px;
-   border-radius: 5px;
-   background-color:  rgb(223, 241, 241);
-
+  font-size:40rpx;
 }
 
-.count{
-   margin-top: 40px;
-    font-size:20px;
-
+.txt_1{
+  color: rgb(114, 199, 199);
+  font-size:46rpx;
+  align-items: center;
+  position: fixed;
+   margin-top: 300rpx;
 }
-
-.btn1{
-  width: 200px;
-
-  background-color: rgb(110, 218, 218);
-  color: rgb(22, 22, 22);
-   border-color: rgb(189, 197, 197);
+.txt_2{
+  color:   rgb(158, 163, 165);
+  font-size:20rpx;
+  align-items: center;
+  position: fixed;
+  bottom: 120rpx;
 }
-
-.btnGroup{
-    margin-top: 20px;
-    display:flex;
-    flex-direction:row;
-}
-.btnGroup1{
-margin-left: 20px;
-
-display:flex;
-flex-direction:column;
-align-items: center;
-}
-
-.btnGroup2{
-    margin-top: 20px;
-    display:flex;
-    flex-direction:column;
-}
-.labelstyle{
-margin-top: 10px;
-}
-.txt_D2{
-   font-size:50px;
-   display:flex;
- flex-direction:column;
- align-items: center;
+.txt_3{
+  color: rgb(114, 199, 199);
+  font-size:40rpx;
+  align-items: center;
+  position: fixed;
+   margin-top: 360rpx;
 }

@@ -1,33 +1,14 @@
 <!--index.wxml-->
 <view class="container">
  
-  <image style="width: 110px; height: 120px; "
-          src="logo.jpg"
+  <image class="image" style="width: 220rpx; height: 240rpx; "
+          src="/images/logo.jpg"
         ></image>
 
 
-  <view class="user_computer">
-
-  <view class="btnGroup">
-    <text>管道内径：</text>
-    <input class="input" bindinput="bindKeyInput"  placeholder="点击输入" type="digit" maxlength='6' />
-    <text decode="{{true}}">&nbsp;mm</text>
-  </view>
-<view class="btnGroup" >
- <view>安装方法:</view>
-  <radio-group name="radio-group" bindchange="radioChange" class="btnGroup1">
-<label ><radio value="radio1" color='#5cc' /> Z法 </label>
-<label class="labelstyle"><radio value="radio2" color='#5cc' /> V法 </label>
-</radio-group>
+   <text class="txt_1">浙江天信仪表科技有限公司</text>
+    <!--<text class="txt_2">ZHEJIANG TANCY INSTRUMENT TECHNOLOGY CO.LTD</text>-->
+     <text class="txt_3" >http://www.tancy.net/</text>
+  
 </view>
-    
-  <view class="btnGroup"><button class='btn1' bindtap="btn1" >计算</button></view>
-
-  <view class="btnGroup2">
-    <text class="txt_D">{{txt_D}}</text>
-    <text class="txt_D2">{{distance}}</text>
-  </view>
-  </view>
-  </view>
-
 
