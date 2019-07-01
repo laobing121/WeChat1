@@ -1,10 +1,11 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/function/function",
-    "pages/logs/logs"
+    "pages/func/func",
+    "pages/logs/logs",
+    "pages/function2/function2",
+    "pages/function3/function3"
   ],
-
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#5cc",
@@ -14,23 +15,24 @@
     "navigationBarTitleStyle": "black",
     "statusBarTextStyle": "black"
   },
-    "tabBar": {
-      "color": "#a9b7b7",
-      "selectedColor": "#11cd6e",
-      "borderStyle": "white",
-      "list": [
-        {
-          "selectedIconPath": "images/home.png",
-          "iconPath": "images/home.png",
-          "pagePath": "pages/index/index",
-          "text": "首页"
-        },
-        {
-          "selectedIconPath": "images/function.png",
-          "iconPath": "images/function.png",
-          "pagePath": "pages/function/function",
-          "text": "功能"
-        }
-      ]
-    }
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/function.png",
+        "iconPath": "images/function.png",
+        "pagePath": "pages/func/func",
+        "text": "功能"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

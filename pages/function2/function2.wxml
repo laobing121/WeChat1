@@ -1,0 +1,25 @@
+<!--pages/function2/function2.wxml-->
+
+
+<view class="container">
+<text class='txt'>计算修正系数</text>
+     <view class="user_computer">
+       <view class="btnGroup">
+        <text>平均误差：</text> 
+         <input class="input" bindinput="bindInput_error"  placeholder="点击输入" maxlength='8' />
+         <text decode="{{true}}">&nbsp;%</text>
+        </view>
+
+        <view class="btnGroup">
+        <text decode="{{true}}">&nbsp;&nbsp; 原系数：</text> 
+         <input class="input" bindinput="bindInput_coef"   placeholder="点击输入" type="digit" maxlength='8' />
+        </view>
+        
+        <view class="btnGroup"><button class='btn1' bindtap="btn1" >计算</button></view>
+
+        <view class="btnGroup2">
+          <text class="txt_D">{{txt_D}}</text>
+          <text class="txt_D2">{{new_coefficient}}</text>
+        </view>
+      </view>
+ </view>

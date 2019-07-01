@@ -54,18 +54,19 @@ Page({
     if (radioValue == "radio1") {
       //这样才能上界面
       this.setData({
-        distance: (diameter / Math.sqrt(3)).toFixed(1) + "mm",
+        distance: (diameter * 2 / Math.sqrt(3)).toFixed(1) + "mm",
       });
     }
     else if (radioValue == "radio2") {
       this.setData({
-        distance: (diameter * 2 / Math.sqrt(3)).toFixed(1) + "mm",
+        distance: (diameter * 2 * 2 / Math.sqrt(3)).toFixed(1) + "mm",
       });
     }
   },
   //按钮处理函数——计算传播时间比
   btn2(e) {
-      
+    if (temperature != "" & temperature != undefined & inputtime != "" & inputtime != undefined)
+      {
          /*** ****为什么分步计算会null？*******
    
         soundVelocity: (1402.335 + 5.033558 * temperature - 0.0579506 * temperature * temperature + 0.0003311632 * temperature * temperature * temperature - 0.000001452621 * temperature * temperature * temperature * temperature + 0.0000000030449 * temperature * temperature * temperature * temperature * temperature) ,
@@ -81,6 +82,7 @@ Page({
             timeratio: (inputtime * 100/ (4000 * diameter / Math.sqrt(3) / (1402.335 + 5.033558 * temperature - 0.0579506 * temperature * temperature + 0.0003311632 * temperature * temperature * temperature - 0.000001452621 * temperature * temperature * temperature * temperature + 0.0000000030449 * temperature * temperature * temperature * temperature * temperature))).toFixed(2) + "%"
           })
         }
+      }
   },
   //按钮处理函数——下一步
   btn_next(e) {

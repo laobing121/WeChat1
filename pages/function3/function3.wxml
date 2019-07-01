@@ -1,0 +1,43 @@
+<!--pages/function3/function3.wxml-->
+<view class="container">
+<text class='txt'>流速流量换算</text>
+     <view class="user_computer">
+     
+        <view class="btnGroup">
+        <text > 内径：</text> 
+         <input class="input" bindinput="bindInput_D1"   placeholder="点击输入" type="digit" maxlength='8' />
+         <text decode="{{true}}">&nbsp;mm</text>
+        </view>
+
+         <view class="btnGroup">
+        <text>流速：</text> 
+         <input class="input" bindinput="bindInput_V"  placeholder="点击输入" type="digit" maxlength='8' />
+         <text decode="{{true}}">&nbsp;m/s</text>
+        </view>
+
+        <view class="btnGroup"><button class='btn1' bindtap="btn1" >流量</button></view>
+
+        <view class="btnGroup2">
+          <text class="txt_D">{{txt_D1}}</text>
+          <text class="txt_D2">{{txt_flow}}</text>
+        </view>
+      </view>
+ </view>
+   
+<view class="container">
+     <view class="user_computer">
+       <view class="btnGroup">
+        <text>流量：</text> 
+         <input class="input" bindinput="bindInput_F"  placeholder="点击输入" type="digit" maxlength='8' />
+         <text decode="{{true}}">&nbsp;m3/h</text>
+        </view>
+
+       
+      <view class="btnGroup"><button class='btn1' bindtap="btn2" >流速</button></view>
+
+        <view class="btnGroup2">
+          <text class="txt_D">{{txt_D2}}</text>
+          <text class="txt_D2">{{txt_velocity}}</text>
+        </view>
+      </view>
+ </view>

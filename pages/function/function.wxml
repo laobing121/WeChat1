@@ -1,11 +1,11 @@
-<!--pages/function/function.wxml-->
+ <!--pages/function/function.wxml-->
 
 
 <view class="container" wx:if="{{isshow_3}}">
 <text class='txt'>计算安装距离</text>
      <view class="user_computer">
        <view class="btnGroup">
-        <text>管道内径：</text>
+        <text>管道内径：</text> 
          <input class="input" bindinput="bindInput_diam"  placeholder="点击输入" type="digit" maxlength='6' />
          <text decode="{{true}}">&nbsp;mm</text>
         </view>

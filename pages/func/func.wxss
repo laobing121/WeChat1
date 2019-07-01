@@ -1,0 +1,4 @@
+/* pages/func/func.wxss */
+.btnGroup{
+    margin-top: 30rpx;
+}

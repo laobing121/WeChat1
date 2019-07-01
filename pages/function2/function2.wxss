@@ -1,0 +1,115 @@
+/* pages/function/function.wxss */
+
+
+
+/**安装距离计算tab页面**/
+.container {
+  margin-top: 150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.user_computer {
+  font-size:40rpx;
+}
+.input{
+   width: 300rpx;
+   height: 60rpx;
+   border-radius: 10rpx;
+   background-color:  rgb(223, 241, 241);
+}
+
+.count{
+   margin-top: 80rpx;
+    font-size:40rpx;
+}
+.txt{
+  color: rgb(114, 199, 199);
+  font-size:50rpx;
+  font-weight: 550;
+  position: fixed;
+  align-items: center;
+  top: 50rpx;
+}
+.btn1{
+  width: 400rpx;
+  margin-top: 40rpx;
+  background-color: rgb(110, 218, 218);
+  color: rgb(22, 22, 22);
+  border-color: rgb(189, 197, 197);
+}
+.button_prew{
+   position: fixed;
+   width: 220rpx;
+   height:90rpx;
+   left: 40rpx;
+   top: 880rpx;
+  background-color: rgb(255, 255, 255);
+  color: rgb(138, 138, 138);
+}
+.button_next{
+   position: fixed;
+   width: 220rpx;
+   height: 90rpx;
+   right: 50rpx;
+   top: 880rpx;
+  background-color: rgb(255, 255, 255);
+  color: rgb(138, 138, 138);
+
+}
+
+.button_prew::after {
+  border: none;
+}
+.button_next::after {
+  border: none;
+}
+.btnGroup0{
+   display:absolute;
+}
+.btnGroup{
+    margin-top: 30rpx;
+    display:flex;
+    flex-direction:row;
+    
+}
+.btnGroup1{
+margin-left: 40rpx;
+
+display:flex;
+flex-direction:column;
+align-items: center;
+}
+
+.btnGroup2{
+    margin-top: 20rpx;
+    display:flex;
+    flex-direction:column;
+}
+.labelstyle{
+margin-top: 20rpx;
+}
+.txt_tip{
+  width: 75%;
+   font-size:32rpx;
+   position: fixed;
+   top: 740rpx;
+   flex-direction:column;
+   align-items: center;
+   color: rgb(125, 139, 139);
+}
+.txt_D2{
+   font-size:100rpx;
+   display:flex;
+ flex-direction:column;
+ align-items: center;
+}
+/**液体声速计算tab页面**/
+.txt_D3{
+   font-size:80rpx;
+   display:flex;
+ flex-direction:column;
+ align-items: center;
+}

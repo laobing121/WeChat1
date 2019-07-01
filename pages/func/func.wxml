@@ -1,0 +1,9 @@
+<!--pages/func/func.wxml-->
+<view class="container">
+
+        <view class="btnGroup"><button class='btn1' bindtap="btn1" >安装条件计算</button></view>
+   <view class="btnGroup"><button class='btn2' bindtap="btn2" >修正系数计算</button></view>
+    <view class="btnGroup"><button class='btn3' bindtap="btn3" >流速流量换算</button></view>
+   
+ </view>
+
