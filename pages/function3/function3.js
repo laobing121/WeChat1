@@ -39,7 +39,7 @@ Page({
   btn1(e) {
     if (diam != "" & velocity != "" & diam != undefined & velocity != undefined){
       this.setData({
-        txt_flow: ((velocity * 36 * 3.141592 * diam * diam) / 40000).toFixed(5) + "m/s"
+        txt_flow: ((velocity * 36 * 3.141592 * diam * diam) / 40000).toFixed(5) + "m3/h"
       });
     }
   },
@@ -48,7 +48,7 @@ Page({
   btn2(e) {
     if (diam != "" & flow != "" & diam != undefined & flow != undefined) {
     this.setData({
-      txt_velocity: (flow * 40000 / 36 / 3.141592 / diam / diam).toFixed(5) + "m3/h"
+      txt_velocity: (flow * 40000 / 36 / 3.141592 / diam / diam).toFixed(5) + "m/s"
     });
     }
   },
