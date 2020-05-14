@@ -1,14 +1,14 @@
 <!--index.wxml-->
 <view class="container">
  
-  <!--<image class="image" style="width: 220rpx; height: 240rpx; "
-          src="/images/logo.jpg"
-        ></image>-->
+  <image class="image" style="width: 400rpx; height: 260rpx; "
+          src="/images/logo2.jpg"
+        ></image>
 
 
-   <!--<text class="txt_1">浙江天信仪表科技有限公司</text>-->
+   <text class="txt_1">熙然工作室出品</text>
     <!--<text class="txt_2">ZHEJIANG TANCY INSTRUMENT TECHNOLOGY CO.LTD</text>-->
-     <!--<text class="txt_3" >http://www.tancy.net/</text>-->
+     <text class="txt_3" >laobing121@hotmail.com</text>
   
 </view>
 
