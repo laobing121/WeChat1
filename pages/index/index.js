@@ -20,6 +20,11 @@ Page({
   //  })
   //},
 
+  toOut: () => {
+    wx.navigateTo({
+      url: '../out/out',
+    })
+  },
 
   onLoad: function () {
     if (app.globalData.userInfo) {

@@ -2,12 +2,13 @@
 <view class="container">
  
   <image class="image" style="width: 400rpx; height: 260rpx; "
-          src="/images/logo2.jpg"
+          src="/images/logo2.jpg" bindtap="toOut"
         ></image>
 
 
    <text class="txt_1">熙然工作室出品</text>
     <!--<text class="txt_2">ZHEJIANG TANCY INSTRUMENT TECHNOLOGY CO.LTD</text>-->
+    <!--<navigator url="../out/out" open-type="navigate"> 我爱我的祖国</navigator>-->
      <text class="txt_3" >laobing121@hotmail.com</text>
   
 </view>

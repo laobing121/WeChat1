@@ -4,7 +4,8 @@
     "pages/func/func",
     "pages/logs/logs",
     "pages/function2/function2",
-    "pages/function3/function3"
+    "pages/function3/function3",
+    "pages/out/out"
   ],
   "window": {
     "backgroundTextStyle": "light",
