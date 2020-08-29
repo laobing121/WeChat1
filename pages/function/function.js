@@ -54,12 +54,12 @@ Page({
     if (radioValue == "radio1") {
       //这样才能上界面
       this.setData({
-        distance: (diameter / Math.tan(60*Math.PI/180)).toFixed(1) + "mm",
+        distance: (diameter / Math.tan(59.42*Math.PI/180)).toFixed(1) + "mm",
       });
     }
     else if (radioValue == "radio2") {
       this.setData({
-        distance: (diameter * 2 / Math.tan(60 * Math.PI / 180)).toFixed(1) + "mm",
+        distance: (diameter * 2 / Math.tan(59.42 * Math.PI / 180)).toFixed(1) + "mm",
       });
     }
   },
@@ -74,12 +74,12 @@ Page({
         if(radioValue == "radio1")
         {
           this.setData({
-            timeratio: (inputtime * 100 / (1000 * diameter / Math.sin(60 * Math.PI / 180) / (1402.335 + 5.033558 * temperature - 0.0579506 * temperature * temperature + 0.0003311632 * temperature * temperature * temperature - 0.000001452621 * temperature * temperature * temperature * temperature + 0.0000000030449 * temperature * temperature * temperature * temperature * temperature))).toFixed(2) + "%"
+            timeratio: (inputtime * 100 / (1000 * diameter / Math.sin(59.42 * Math.PI / 180) / (1402.335 + 5.033558 * temperature - 0.0579506 * temperature * temperature + 0.0003311632 * temperature * temperature * temperature - 0.000001452621 * temperature * temperature * temperature * temperature + 0.0000000030449 * temperature * temperature * temperature * temperature * temperature))).toFixed(2) + "%"
           })
         }
         else{
           this.setData({
-            timeratio: (inputtime * 100 / (2000 * diameter / Math.sin(60 * Math.PI / 180) / (1402.335 + 5.033558 * temperature - 0.0579506 * temperature * temperature + 0.0003311632 * temperature * temperature * temperature - 0.000001452621 * temperature * temperature * temperature * temperature + 0.0000000030449 * temperature * temperature * temperature * temperature * temperature))).toFixed(2) + "%"
+            timeratio: (inputtime * 100 / (2000 * diameter / Math.sin(59.42 * Math.PI / 180) / (1402.335 + 5.033558 * temperature - 0.0579506 * temperature * temperature + 0.0003311632 * temperature * temperature * temperature - 0.000001452621 * temperature * temperature * temperature * temperature + 0.0000000030449 * temperature * temperature * temperature * temperature * temperature))).toFixed(2) + "%"
           })
         }
       }
