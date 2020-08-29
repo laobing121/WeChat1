@@ -21,6 +21,8 @@
         <view class="btnGroup2">
           <text class="txt_D">{{txt_D}}</text>
           <text class="txt_D2">{{distance}}</text>
+          <text class="txt_DD">{{txt_DD}}</text>
+          <text class="txt_DD2">{{TractLength}}</text>
         </view>
       </view>
  </view>

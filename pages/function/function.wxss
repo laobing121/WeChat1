@@ -54,7 +54,7 @@
    width: 220rpx;
    height: 90rpx;
    right: 50rpx;
-   top: 880rpx;
+   top: 1000rpx;
   background-color: rgb(255, 255, 255);
   color: rgb(138, 138, 138);
 
@@ -101,6 +101,12 @@ margin-top: 20rpx;
    color: rgb(125, 139, 139);
 }
 .txt_D2{
+   font-size:100rpx;
+   display:flex;
+ flex-direction:column;
+ align-items: center;
+}
+.txt_DD2{
    font-size:100rpx;
    display:flex;
  flex-direction:column;

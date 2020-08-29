@@ -1,7 +1,9 @@
 // pages/function/function.js
 var app = getApp()
 var initData = "安装距离：";
+var initData_2 = "声道长度：";
 var distance;
+var TractLength;
 var soundVelocity;
 var inputtime;
 var computetime;
@@ -19,8 +21,9 @@ Page({
   data: {
     currentTab: 0,
     txt_D: initData,
+    txt_DD: initData_2,
     hasUserInfo: false,
-    distance, diameter, radioValue, soundVelocity, inputtime, computetime, timeratio,
+    distance, TractLength, diameter, radioValue, soundVelocity, inputtime, computetime, timeratio,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     isshow_1: false,
     isshow_2:true,
@@ -55,11 +58,13 @@ Page({
       //这样才能上界面
       this.setData({
         distance: (diameter / Math.tan(59.42*Math.PI/180)).toFixed(1) + "mm",
+        TractLength: (diameter / Math.sin(59.42 * Math.PI / 180)).toFixed(1) + "mm",
       });
     }
     else if (radioValue == "radio2") {
       this.setData({
         distance: (diameter * 2 / Math.tan(59.42 * Math.PI / 180)).toFixed(1) + "mm",
+        TractLength: (diameter * 2 / Math.sin(59.42 * Math.PI / 180)).toFixed(1) + "mm",
       });
     }
   },
